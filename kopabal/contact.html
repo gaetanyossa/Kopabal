@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopabal</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/kopabal32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="images/kopabal48.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/kopabal16.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a980e88be8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header-home">
+        <!-- menu -->
+        <header>
+            <div class="logo">
+                <img src="images/kopabal.svg" alt="KOPABAL">
+                
+            </div>
+                <div class="menu_link">
+                    <a href="index.html">Home</a>
+                    <a href="service.html">Service</a>
+                    <a href="#">Projet</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+             
+            <!-- responsive menu -->
+                 <div class="sidebar" id="mySidebar">
+                    <div class="closebtn"  onclick="closeNav()">
+                        <img src="images/close.png">
+                    </div>
+                    <a href="index.html">Home</a>
+                    <a href="service.html">Service</a>
+                    <a href="projets.html">Projet</a>
+                    <a href="contact.html">Contact</a>
+                 </div>
+
+                 <div id="main">
+                    <button class="openbtn" onclick="openNav()">
+                        <img src="images/menu.png">
+                        Menu
+                    </button>
+                 </div>
+            <!-- responsive menu -->
+        </header>
+        <!-- menu -->
+        <section id="contact">
+            <h1 class="sub-tittle-section">Laissez nous un message</h1>
+            <div>
+                <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/mvojkrnk" method="post">
+                    <fieldset id="fs-frm-inputs">
+                      <label for="full-name">Nom complet</label>
+                      <input type="text" name="name" id="full-name" placeholder="Nom et prenom" required="">
+                      <label for="email-address">Adresse gmail</label>
+                      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                      <fieldset id="fs-frm-selects">
+                        <label for="timely">Service souhaité.</label>
+                        <select name="timely" id="timely" required="yes">
+                          <option value="" selected="" disabled="">choisir</option>
+                          <option value="1">Construction</option>
+                          <option value="3">Plomberie</option>
+                          <option value="5">Maconnerie</option>
+                          <option value="7">Carrelage</option>
+                          <option value="9">Autre</option>
+                        </select>
+                       
+                      </fieldset>
+                      <label for="message">Message</label>
+                      <textarea rows="3" name="message" id="message" placeholder="Entrez un message..." required=""></textarea>
+                    </fieldset>
+                    <input type="submit" value="Envoyer">
+                  </form>
+                
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <a href="mentionslegales.html">Mentions légales</a>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy;2023 KOPABAL. Designed by <a href="https://gaetanyossa.github.io/portfolio_gaetan/" style="color: white;">GAETAN YOSSA</a></p>
+            </div>
+            
+        </footer>
+        <script src="script.js"></script>
+    </body>
+    </html>
